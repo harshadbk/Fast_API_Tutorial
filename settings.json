@@ -1,0 +1,6 @@
+{
+  "editor.quickSuggestions": true,
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.acceptSuggestionOnEnter": "on",
+  "python.analysis.autoImportCompletions": true
+}

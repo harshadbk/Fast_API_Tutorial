@@ -50,3 +50,4 @@ def update_user(user_id: str, name: str):
 def delete_user(user_id: str):
     supabase.table("users").delete().eq("id", user_id).execute()
     return {"message": f"User deleted {user_id}"}
+

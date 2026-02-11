@@ -1,0 +1,62 @@
+[
+  {
+    "patient_id": "P001",
+    "patient_name": "Rahul Sharma",
+    "disease": "Fever",
+    "ward_no": 101
+  },
+  {
+    "patient_id": "P002",
+    "patient_name": "Anjali Patil",
+    "disease": "Diabetes",
+    "ward_no": 102
+  },
+  {
+    "patient_id": "P003",
+    "patient_name": "Amit Verma",
+    "disease": "Fracture",
+    "ward_no": 201
+  },
+  {
+    "patient_id": "P004",
+    "patient_name": "Sneha Joshi",
+    "disease": "Asthma",
+    "ward_no": 103
+  },
+  {
+    "patient_id": "P005",
+    "patient_name": "Rohan Singh",
+    "disease": "Heart Disease",
+    "ward_no": 301
+  },
+  {
+    "patient_id": "P006",
+    "patient_name": "Neha Kulkarni",
+    "disease": "Migraine",
+    "ward_no": 104
+  },
+  {
+    "patient_id": "P007",
+    "patient_name": "Suresh Mehta",
+    "disease": "Pneumonia",
+    "ward_no": 202
+  },
+  {
+    "patient_id": "P008",
+    "patient_name": "Pooja Nair",
+    "disease": "Kidney Stone",
+    "ward_no": 302
+  },
+  {
+    "patient_id": "P009",
+    "patient_name": "Kunal Desai",
+    "disease": "Dengue",
+    "ward_no": 105
+  },
+  {
+    "patient_id": "P010",
+    "patient_name": "Priya Iyer",
+    "disease": "Covid-19",
+    "ward_no": 203
+  }
+]
