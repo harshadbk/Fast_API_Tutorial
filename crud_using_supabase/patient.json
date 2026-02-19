@@ -1,62 +1,106 @@
 [
-  {
-    "patient_id": "P001",
-    "patient_name": "Rahul Sharma",
-    "disease": "Fever",
-    "ward_no": 101
-  },
-  {
-    "patient_id": "P002",
-    "patient_name": "Anjali Patil",
-    "disease": "Diabetes",
-    "ward_no": 102
-  },
-  {
-    "patient_id": "P003",
-    "patient_name": "Amit Verma",
-    "disease": "Fracture",
-    "ward_no": 201
-  },
-  {
-    "patient_id": "P004",
-    "patient_name": "Sneha Joshi",
-    "disease": "Asthma",
-    "ward_no": 103
-  },
-  {
-    "patient_id": "P005",
-    "patient_name": "Rohan Singh",
-    "disease": "Heart Disease",
-    "ward_no": 301
-  },
-  {
-    "patient_id": "P006",
-    "patient_name": "Neha Kulkarni",
-    "disease": "Migraine",
-    "ward_no": 104
-  },
-  {
-    "patient_id": "P007",
-    "patient_name": "Suresh Mehta",
-    "disease": "Pneumonia",
-    "ward_no": 202
-  },
-  {
-    "patient_id": "P008",
-    "patient_name": "Pooja Nair",
-    "disease": "Kidney Stone",
-    "ward_no": 302
-  },
-  {
-    "patient_id": "P009",
-    "patient_name": "Kunal Desai",
-    "disease": "Dengue",
-    "ward_no": 105
-  },
-  {
-    "patient_id": "P010",
-    "patient_name": "Priya Iyer",
-    "disease": "Covid-19",
-    "ward_no": 203
-  }
+    {
+        "patient_id": "P002",
+        "patient_name": "Anjali Patil",
+        "disease": "Diabetes",
+        "ward_no": 102
+    },
+    {
+        "patient_id": "P005",
+        "patient_name": "Rohan Singh",
+        "disease": "Heart Disease",
+        "ward_no": 301
+    },
+    {
+        "patient_id": "P006",
+        "patient_name": "Neha Kulkarni",
+        "disease": "Migraine",
+        "ward_no": 104
+    },
+    {
+        "patient_id": "P007",
+        "patient_name": "Suresh Mehta",
+        "disease": "Pneumonia",
+        "ward_no": 202
+    },
+    {
+        "patient_id": "P008",
+        "patient_name": "Pooja Nair",
+        "disease": "Kidney Stone",
+        "ward_no": 302
+    },
+    {
+        "patient_id": "P009",
+        "patient_name": "Kunal Desai",
+        "disease": "Dengue",
+        "ward_no": 105
+    },
+    {
+        "patient_id": "P010",
+        "patient_name": "Priya Iyer",
+        "disease": "Covid-19",
+        "ward_no": 203
+    },
+    {
+        "patient_id": "p0010",
+        "patient_name": "bkc",
+        "disease": "buttler",
+        "word_no": 23
+    },
+    {
+        "patient_id": "P001",
+        "patient_name": "string",
+        "disease": "string",
+        "ward_no": 189
+    },
+    {
+        "patient_id": "P00111",
+        "patient_name": "Anjali kali",
+        "disease": "Fewer",
+        "ward_no": 123
+    },
+    {
+        "patient_id": "P00131",
+        "patient_name": "Anjali kali boli",
+        "disease": "Fewer",
+        "ward_no": 123
+    },
+    {
+        "patient_id": "P00981",
+        "patient_name": "Anjali",
+        "disease": "Fewer",
+        "ward_no": 123,
+        "bmi": 246,
+        "verdict": "Obese"
+    },
+    {
+        "patient_id": "STRING",
+        "patient_name": "string",
+        "disease": "string",
+        "ward_no": 1,
+        "bmi": 2,
+        "verdict": "UnderWeight"
+    },
+    {
+        "patient_id": "STRINGS",
+        "patient_name": "string",
+        "disease": "string",
+        "ward_no": 1,
+        "bmi": 2,
+        "verdict": "UnderWeight"
+    },
+    {
+        "patient_id": "P0289",
+        "patient_name": "suraj",
+        "disease": "PCOD",
+        "word_no": 879
+    },
+    {
+        "patient_id": "P0456",
+        "patient_name": "Anjali khatale",
+        "disease": "Fever",
+        "ward_no": 1,
+        "bmi": 2,
+        "verdict": "UnderWeight"
+    }
 ]
