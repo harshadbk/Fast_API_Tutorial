@@ -1,15 +1,10 @@
 [
     {
-        "patient_id": "P002",
-        "patient_name": "Anjali Patil",
-        "disease": "Diabetes",
-        "ward_no": 102
-    },
-    {
-        "patient_id": "P005",
-        "patient_name": "Rohan Singh",
-        "disease": "Heart Disease",
-        "ward_no": 301
+        "patient_name": "mangal",
+        "disease": "Fever",
+        "ward_no": 1,
+        "bmi": 2,
+        "verdict": "UnderWeight"
     },
     {
         "patient_id": "P006",
@@ -48,12 +43,6 @@
         "word_no": 23
     },
     {
-        "patient_id": "P001",
-        "patient_name": "string",
-        "disease": "string",
-        "ward_no": 189
-    },
-    {
         "patient_id": "P00111",
         "patient_name": "Anjali kali",
         "disease": "Fewer",
@@ -61,9 +50,11 @@
     },
     {
         "patient_id": "P00131",
-        "patient_name": "Anjali kali boli",
-        "disease": "Fewer",
-        "ward_no": 123
+        "patient_name": "Anjali",
+        "disease": "Fever",
+        "ward_no": 1,
+        "bmi": 2,
+        "verdict": "UnderWeight"
     },
     {
         "patient_id": "P00981",
@@ -91,13 +82,24 @@
     },
     {
         "patient_id": "P0289",
-        "patient_name": "suraj",
-        "disease": "PCOD",
-        "word_no": 879
+        "patient_name": "Anjali",
+        "disease": "Fever",
+        "word_no": 879,
+        "ward_no": 1,
+        "bmi": 2,
+        "verdict": "UnderWeight"
     },
     {
         "patient_id": "P0456",
         "patient_name": "Anjali khatale",
+        "disease": "Fever",
+        "ward_no": 1,
+        "bmi": 2,
+        "verdict": "UnderWeight"
+    },
+    {
+        "patient_id": "P04567",
+        "patient_name": "Anjali harshad khatale",
         "disease": "Fever",
         "ward_no": 1,
         "bmi": 2,

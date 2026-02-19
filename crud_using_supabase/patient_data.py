@@ -5,7 +5,7 @@ import os
 from dotenv import load_dotenv
 import json
 from pydantic import BaseModel , Field , computed_field
-from typing import Annotated
+from typing import Annotated,Optional
 load_dotenv()
 
 class Patient(BaseModel):
@@ -30,6 +30,30 @@ class Patient(BaseModel):
             return "OverWeight"
         else:
             return "Obese"
+        
+class patient_update(BaseModel):
+    patient_name: Annotated[Optional[str], Field(description="Name of Patient", examples=["Anjali"])]
+    disease: Annotated[Optional[str], Field(description="Disease of Patient", examples=["Fever"])]
+    ward_no: Annotated[Optional[int], Field(gt=0, lt=10000)]
+
+    @computed_field
+    @property
+    def bmi(self) -> float:
+        return self.ward_no * 2
+
+    @computed_field
+    @property
+    def verdict(self) -> str:
+        if self.bmi < 10.5:
+            return "UnderWeight"
+        elif self.bmi < 25:
+            return "Normal"
+        elif self.bmi < 30:
+            return "OverWeight"
+        else:
+            return "Obese"
+
+
 
 app = FastAPI()
 
@@ -164,4 +188,60 @@ def create_patient(patient: Patient):
             "message": "Welcome to Patient API",
             "success": True
         }
+    )
+
+@app.put("/updatepatient/{patient_id}")
+def update_patient(patient_id: str, patient_update: patient_update):
+    data = mydata()
+
+    for index, existing_patient in enumerate(data):
+
+        if existing_patient.get("patient_id", "").upper() == patient_id.upper():
+
+            update_data = patient_update.model_dump(exclude_unset=True)
+
+            # Only update allowed fields
+            for key, value in update_data.items():
+                existing_patient[key] = value
+
+            # Save updated record
+            data[index] = existing_patient
+            savedata(data)
+
+            # Recreate full model (ID remains same)
+            p = Patient(**existing_patient)
+
+            return {
+                "message": "Patient updated successfully",
+                "patient": p.model_dump()
+            }
+
+    raise HTTPException(status_code=404, detail="Patient Not Exists")
+
+
+@app.delete("/deletepatient/{patient_id}")
+def delete_patient(
+    patient_id: str = Path(
+        ...,
+        description="Unique ID of the patient to delete",
+        example="P001"
+    )
+):
+    data = mydata()
+
+    for index, existing_patient in enumerate(data):
+
+        if existing_patient.get("patient_id", "").upper() == patient_id.upper():
+
+            deleted_patient = data.pop(index)
+            savedata(data)
+
+            return {
+                "message": "Patient deleted successfully",
+                "deleted_patient": deleted_patient
+            }
+
+    raise HTTPException(
+        status_code=404,
+        detail="Patient Not Exists"
     )
